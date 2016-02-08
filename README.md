@@ -25,5 +25,5 @@ Note the important note at the very bottom about keeping the scroll position fix
 ![Slide 3](/docs/Slide3.PNG?raw=true)
 ![Slide 4](/docs/Slide4.PNG?raw=true)
 
-Good luck! You can spend a maximum of 3 hours on it, but if you finish early, we'll go get beer, so...
+Good luck! You can spend a maximum of 2 hours on it, but if you finish early, we can go get some beer, so the quicker the better.
 
