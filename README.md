@@ -15,12 +15,15 @@ But first, the goal of this test is to produce a working (though rudimentary) ch
 
 ##Designs
 Below are the designs which give further detail about what you need to produce, with notes from our UX designer.
+
 You'll find his original example HTML files in the app folder, along with the necessary CSS and png file. You shouldn't need to alter the CSS to complete this test.
+
+Note the important note at the very bottom about keeping the scroll position fixed to the end of the conversation.
 
 ![Slide 1](/docs/Slide1.PNG?raw=true)
 ![Slide 2](/docs/Slide2.PNG?raw=true)
 ![Slide 3](/docs/Slide3.PNG?raw=true)
 ![Slide 4](/docs/Slide4.PNG?raw=true)
 
-
+Good luck!
 
