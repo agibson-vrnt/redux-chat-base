@@ -5,7 +5,7 @@ Hi, thanks for taking the test. It's designed to see how well you can apply a mo
 We've already provided some things for you, and there are a few ground rules.
 
 But first, the goal of this test is to produce a working (though rudimentary) chat client using our existing peer-to-peer framework. You can read about the API for the chat framework here: 
-[chat-service/readme.md](/redux-chat-base/blob/master/chat-service/readme.md)
+[chat-service/readme.md](/chat-service/readme.md)
 
 0. At the end of the test we must be able to open your app in three browser windows, join the room as a named user and communicate with the other users using basic text chat.
 0. Please use this exercise to demonstrate your knowledge of ES6, following the react.js' community's conventions where possible.
