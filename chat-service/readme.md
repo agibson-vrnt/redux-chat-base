@@ -3,14 +3,16 @@
 For the purposes of this prototype, the API is restricted to accessing a single, pre-registered room with the WebRTC signal servers.
 
 BrowserChatRoom exports the following interface:
-
-    enterAs( options, callback( err ) )
-    say( text )
+```javascript
+enterAs( options, callback( err ) )
+say( text )
+```
 
 It also exposes the following events as an EventEmitter:
-
-    on( "peerJoined", callback( peer ) )
-    on( "message", callback( { from, fromId, isMine, content } ) )
+```javascript
+on( "peerJoined", callback( peer ) )
+on( "message", callback( { from, fromId, isMine, content } ) )
+```
 
 - - -
 
@@ -26,14 +28,14 @@ An asynchronous call which callsback upon entering the room
 
 
 ######Example
+```javascript
+BrowserChatRoom.enterAs( { name: "Bob" }, function( err ) {
 
-    BrowserChatRoom.enterAs( { name: "Bob" }, function( err ) {
+    if( err ) { throw err; }
+    console.log( "Bob has joined the room" );
 
-        if( err ) { throw err; }
-        console.log( "Bob has joined the room" );
-
-    } );
-
+} );
+```
 ## say( text )
 
 A synchronous call which returns control once the message has been dispatched to the room. You can monitor whether the message has been received by the room using the on( "message" ) event
@@ -42,8 +44,9 @@ A synchronous call which returns control once the message has been dispatched to
 The text of the message to send to the room
 
 ######Example
-
-    BrowserChatRoom.say( "Hello world!" );
+```javascript
+BrowserChatRoom.say( "Hello world!" );
+```
 
 - - -
 
@@ -62,12 +65,13 @@ Note: You may find other properties available on the peer object, but please don
 | name      | The name of the user who is in the room |
 
 ######Example
-    BrowserChatRoom.on( "peerJoined", peer => {
+```javascript
+BrowserChatRoom.on( "peerJoined", peer => {
 
-        console.log( peer.name, "is in the room or has just joined" )
+    console.log( peer.name, "is in the room or has just joined" )
 
-    } );
-
+} );
+```
 
 ##on( "message", callback( details )
 
@@ -83,13 +87,14 @@ Properties of the details parameter are described below:
 | content    | Content of the message (text)                             |
 
 ######Example
-    BrowserChatRoom.on( "message", { from, fromId, isMine, content } => {
+```javascript
+BrowserChatRoom.on( "message", { from, fromId, isMine, content } => {
 
-        var who = isMine ? "I" : from;
-        console.log( who, "said", content );
+    var who = isMine ? "I" : from;
+    console.log( who, "said", content );
 
-    } );
-
+} );
+```
 - - -
 
-That's it for this early prototype...
+That's it for this early prototype... (sorry the syntax is a bit shoddy...)
