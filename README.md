@@ -14,7 +14,8 @@ But first, the goal of this test is to produce a working (though rudimentary) ch
 0. We've already set up Babel for use as a transpiler. Feel free to add other tools as appropriate via npm, and to install them globally if necessary (please keep a note though... :/ ).
 
 ##Designs
-Here are the designs which give further detail about what you need to produce, with notes from our UX designer.
+Below are the designs which give further detail about what you need to produce, with notes from our UX designer.
+You'll find his original example HTML files in the app folder, along with the necessary CSS and png file. You shouldn't need to alter the CSS to complete this test.
 
 ![Slide 1](/docs/Slide1.PNG?raw=true)
 ![Slide 2](/docs/Slide2.PNG?raw=true)
